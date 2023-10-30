@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-30T16:57:50 IST" name="Suite" finished-at="2023-10-30T16:58:07 IST" duration-ms="17441">
+    <groups>
+    </groups>
+    <test started-at="2023-10-30T16:57:50 IST" name="SubmitOrder" finished-at="2023-10-30T16:58:05 IST" duration-ms="15347">
+      <class name="module1.tests.standalonetest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:57:50 IST" name="launchApplication" finished-at="2023-10-30T16:57:54 IST" duration-ms="4204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:57:54 IST" name="submitOrder" data-provider="dataprovider" finished-at="2023-10-30T16:57:57 IST" duration-ms="2666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=nitin.n9@gmail.com, password=Iamking@000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:57:57 IST" name="closeBrowser" finished-at="2023-10-30T16:57:57 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:57:57 IST" name="launchApplication" finished-at="2023-10-30T16:57:59 IST" duration-ms="2261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:57:59 IST" name="submitOrder" data-provider="dataprovider" finished-at="2023-10-30T16:58:02 IST" duration-ms="2693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=nitin.n99@gmail.com, password=Iamking@000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:58:02 IST" name="closeBrowser" finished-at="2023-10-30T16:58:02 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:58:02 IST" name="launchApplication" finished-at="2023-10-30T16:58:05 IST" duration-ms="2310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyProductOnOrdersPage()[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:58:05 IST" name="verifyProductOnOrdersPage" finished-at="2023-10-30T16:58:05 IST" depends-on-methods="module1.tests.standalonetest.submitOrder" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductOnOrdersPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:module1.tests.standalonetest@79e4c792]" started-at="2023-10-30T16:58:05 IST" name="closeBrowser" finished-at="2023-10-30T16:58:05 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- module1.tests.standalonetest -->
+    </test> <!-- SubmitOrder -->
+    <test started-at="2023-10-30T16:58:05 IST" name="ErrorValidations" finished-at="2023-10-30T16:58:07 IST" duration-ms="1917">
+      <class name="module1.tests.errorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:module1.tests.errorValidationTest@536f2a7e]" started-at="2023-10-30T16:58:05 IST" name="launchApplication" finished-at="2023-10-30T16:58:07 IST" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="errorvalidation()[pri:0, instance:module1.tests.errorValidationTest@536f2a7e]" started-at="2023-10-30T16:58:07 IST" name="errorvalidation" finished-at="2023-10-30T16:58:07 IST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorvalidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:module1.tests.errorValidationTest@536f2a7e]" started-at="2023-10-30T16:58:07 IST" name="closeBrowser" finished-at="2023-10-30T16:58:07 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- module1.tests.errorValidationTest -->
+    </test> <!-- ErrorValidations -->
+  </suite> <!-- Suite -->
+</testng-results>

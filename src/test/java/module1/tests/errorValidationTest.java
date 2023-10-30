@@ -8,8 +8,9 @@ import module1.testcomponent.BaseTest;
 public class errorValidationTest extends BaseTest{
 	
 	@Test
-	public void submitOrder() {
+	public void errorvalidation() {
 		
+		System.out.println("hey error validation part");
 		lp.clickonLoginButton("nitin.n9@gmail.com", "Iking@000");
 		
 		String error= lp.errorMessageonInvalidCred();

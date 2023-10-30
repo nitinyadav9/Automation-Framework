@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -21,7 +23,7 @@ import automation.classes.loginpage;
 
 public class BaseTest {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public loginpage lp;
 	public void initializeDriver() throws IOException {
 		
@@ -42,6 +44,22 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://rahulshettyacademy.com/client");
 		driver.manage().window().maximize();
+		
+	}
+	public String takeScreenshot(String testcaseName) throws IOException {
+		
+		System.out.println(driver);
+		
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+		
+		File dest = new File(System.getProperty("user.dir")+ "\\reports" + testcaseName +".png");
+		FileUtils.copyFile(source, dest);;
+		
+		return System.getProperty("user.dir") + "\\reports" + testcaseName +".png";
+		
 		
 	}
 	

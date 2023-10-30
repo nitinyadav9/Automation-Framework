@@ -80,18 +80,7 @@ public class standalonetest extends BaseTest {
 		
 	}
 	
-	public void takeScreenshot(String filename) throws IOException {
-		
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		
-		
-		File dest = new File("D:\\Automation framework\\SeleniumFrameworkDesign\\src\\test\\java\\module1\\data" + filename +".png");
-		FileUtils.copyFile(source, dest);;
-		
-		
-	}
+
 	
 	@DataProvider
 	public Object[][] dataprovider() throws IOException, ParseException {
